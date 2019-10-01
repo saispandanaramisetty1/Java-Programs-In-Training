@@ -2,24 +2,16 @@ public class CommandLineArguments
 {
 	public static void main(String[] args)
 	{
-		if(args.length==0)
+		String[] array = args;
+		for(int i=0;i<array.length;i++)
 		{
-			System.out.println(" no elements ");		
-		}
-		else
-		{
-			String num;
-			for(int i=0;i<=args.length-1;i++)
-			{
-				num = args[i];
-				System.out.print(num);
-				if(i!=args.length-1)
-				{
-					System.out.print(",");
-				}
-			}
-			System.out.println();
+			System.out.println(array[i]);
+			
 			
 		}
+		String[] s = array.split();
+		System.out.println(s);
+		
 	}
+	
 }
